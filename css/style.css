@@ -1,3 +1,17 @@
+:root {
+  --primari-text-color: #2e2f42;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  bottom: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -11,9 +25,26 @@ a:hover,
 a:focus {
   color: #404bbf;
 }
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
 .list {
   list-style-type: none;
 }
+
 .buttons:hover,
 .buttons:focus {
   background-color: #404bbf;
@@ -36,13 +67,53 @@ a:focus {
 .raleway-text:focus {
   color: #404bbf;
 }
+.menu-item {
+  padding: 24px 0 24px;
+}
+.menu-adress {
+  display: flex;
+  gap: 40px;
+  padding: 24px 0;
+  display: block;
+}
+.menu {
+  display: flex;
+  gap: 40px;
+}
+.page-navigation {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 471px;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: 0 15px;
+  padding-right: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
+}
 .logotype {
+  display: flex;
+  margin-right: 76px;
   color: var(--iris, #4d5ae5);
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
-  letter-spacing: 0.54px;
+  letter-spacing: 0.03em;
+  align-items: center;
   text-transform: uppercase;
 }
 .raleway-text {
@@ -67,6 +138,8 @@ a:focus {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 address {
   font-style: normal;
@@ -97,6 +170,9 @@ address {
 }
 .hero {
   background: var(--navyblue, #2e2f42);
+  flex-shrink: 0;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .main-tittle {
@@ -109,6 +185,8 @@ address {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  text-align: center;
+  max-width: 496px;
 }
 .ucraine {
   background: #fff;
@@ -167,6 +245,17 @@ address {
 
 .portfolio-team-tittle {
   background: #f4f4fd;
+  color: var(--navyblue, #2e2f42);
+  text-align: center;
+
+  /* Header 2 */
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 .raleway-name:hover,
 .raleway-namer:focus {
@@ -175,6 +264,8 @@ address {
 .logotype-footer {
   color: var(--iris, #4d5ae5);
   font-family: "Raleway", sans-serif;
+  margin-bottom: 16px;
+  display: inline-block;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
@@ -183,12 +274,14 @@ address {
 }
 .footer {
   background: var(--navyblue, #2e2f42);
+  padding: 100px 0;
 }
 .footer-text {
   color: var(--cloud, #f4f4fd);
 
   /* Body */
   font-family: "Roboto", sans-serif;
+  max-width: 264px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
