@@ -57,6 +57,11 @@ img {
   /* Button Text */
   font-family: "Roboto", sans-serif;
   font-style: normal;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border-radius: 56px;
+  border: none;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -80,6 +85,7 @@ img {
   display: flex;
   gap: 40px;
 }
+
 .page-navigation {
   display: flex;
   align-items: center;
@@ -148,15 +154,18 @@ address {
 .adress-link:focus {
   color: #404bbf;
 }
-.adress {
-  color: var(--slate, #434455);
-
-  /* Body */
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+.adress-info {
+  display: flex;
+  color: #434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  font-style: normal;
+}
+.menu-adress {
+  display: flex;
+  gap: 40px;
+  padding: 24px 0;
+  align-items: center;
 }
 .adress {
   color: var(--slate, #434455);
@@ -168,6 +177,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 .hero {
   background: var(--navyblue, #2e2f42);
   flex-shrink: 0;
@@ -188,18 +198,37 @@ address {
   text-align: center;
   max-width: 496px;
 }
+.ruls {
+  padding: 120px 0;
+}
 .ucraine {
   background: #fff;
+}
+.menu-ruls {
+  display: flex;
+  gap: 24px;
+  width: calc((100% - 72px) / 4);
+}
+.menu-ruls-item {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  flex-basis: calc((100% - 72px) / 4);
 }
 .main-tittle-item {
   color: var(--navyblue, #2e2f42);
 
   /* Header 3 */
   font-family: "Roboto", sans-serif;
+  margin-bottom: 8px;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  width: calc((100% - 72px) / 4);
 }
 .tittle {
   color: var(--navyblue, #2e2f42);
@@ -225,10 +254,12 @@ address {
 }
 .team-page {
   background-color: var(--cloud, #f4f4fd);
+  padding: 120px 0;
 }
 
 .our-team-tittle {
   color: var(--navyblue, #2e2f42);
+  margin-bottom: 72px;
   text-align: center;
 
   /* Header 2 */
@@ -256,6 +287,31 @@ address {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.portfolio-card {
+  line-height: 1.11;
+  text-transform: capitalize;
+  color: #2e2f42;
+  font-weight: 500px;
+  width: calc((100% - 48px) / 3);
+}
+.div-card {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+.tittle-card {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 .raleway-name:hover,
 .raleway-namer:focus {
