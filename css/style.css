@@ -210,7 +210,6 @@ address {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  flex-basis: calc((100% - 72px) / 4);
 }
 .main-tittle-item {
   color: var(--navyblue, #2e2f42);
@@ -275,11 +274,15 @@ address {
   border-radius: 0 0 4px 4px;
   background-color: #ffffff;
 }
-
+.our-portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .portfolio-team-tittle {
   background: #f4f4fd;
   color: var(--navyblue, #2e2f42);
   text-align: center;
+  margin-bottom: 72px;
 
   /* Header 2 */
   font-family: "Roboto", sans-serif;
