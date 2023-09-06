@@ -216,6 +216,7 @@ address {
 .menu-ruls {
   display: flex;
   gap: 24px;
+  margin-bottom: 8px;
 }
 .menu-ruls-item {
   font-family: "Roboto", sans-serif;
@@ -282,6 +283,7 @@ address {
   display: flex;
   gap: 24px;
   padding-left: 0;
+  margin-bottom: 8px;
 }
 .our-list-item {
   width: calc((100% - 72px) / 4);
