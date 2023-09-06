@@ -231,7 +231,7 @@ address {
 
   /* Header 3 */
   font-family: "Roboto", sans-serif;
-  margin-bottom: 8px;
+
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -247,7 +247,6 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
 }
 .text {
   color: var(--slate, #434455);
